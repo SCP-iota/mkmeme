@@ -1,9 +1,7 @@
 import Vector2 from './Vector2'
 
 export default class Rect {
-    constructor(public topLeft: Vector2, public size: Vector2) {
-        
-    }
+    constructor(public topLeft: Vector2, public size: Vector2) {}
 
     get topRight(): Vector2 {
         return new Vector2(this.topLeft.x + this.size.x, this.topLeft.y)
